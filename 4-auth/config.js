@@ -18,7 +18,7 @@ var getConfig = module.exports = function () {
     port: process.env.PORT || 8080,
 
     // Secret is used by sessions to encrypt the cookie.
-    secret: process.env.SESSION_SECRET || 'Mp_ep0bHfnuS2oES6HSHMuFQ',
+    secret: process.env.SESSION_SECRET || 'your-session-secret',
 
     // dataBackend can be 'datastore', 'cloudsql', or 'mongodb'. Be sure to
     // configure the appropriate settings for each storage engine below.
