@@ -21,17 +21,17 @@ var getConfig = module.exports = function () {
     // configure the appropriate settings for each storage engine below.
     // If you are unsure, use datastore as it requires no additional
     // configuration.
-    dataBackend: process.env.BACKEND || 'datastore',
+    dataBackend: process.env.BACKEND || 'mysql',
 
     // This is the id of your project in the Google Developers Console.
     gcloud: {
-      projectId: process.env.GCLOUD_PROJECT || 'your-project-id'
+      projectId: process.env.GCLOUD_PROJECT || 'nodejs-starter-projects'
     },
 
     mysql: {
-      user: process.env.MYSQL_USER || 'your-mysql-user',
-      password: process.env.MYSQL_PASSWORD || 'your-mysql-password',
-      host: process.env.MYSQL_HOST || 'your-mysql-host'
+      user: process.env.MYSQL_USER || 'nodeapp',
+      password: process.env.MYSQL_PASSWORD || 'administrator',
+      host: process.env.MYSQL_HOST || '173.194.87.84'
     },
 
     mongodb: {
