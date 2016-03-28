@@ -18,26 +18,26 @@ var getConfig = module.exports = function () {
     port: process.env.PORT || 8080,
 
     // Secret is used by sessions to encrypt the cookie.
-    secret: process.env.SESSION_SECRET || 'your-secret-here',
+    secret: process.env.SESSION_SECRET || 'Mp_ep0bHfnuS2oES6HSHMuFQ',
 
     // dataBackend can be 'datastore', 'cloudsql', or 'mongodb'. Be sure to
     // configure the appropriate settings for each storage engine below.
     // If you are unsure, use datastore as it requires no additional
     // configuration.
-    dataBackend: process.env.BACKEND || 'datastore',
+    dataBackend: process.env.BACKEND || 'cloudsql',
 
     // This is the id of your project in the Google Developers Console.
     gcloud: {
-      projectId: process.env.GCLOUD_PROJECT || 'your-project-id'
+      projectId: process.env.GCLOUD_PROJECT || 'nodejs-starter-projects'
     },
 
     // Typically you will create a bucket with the same name as your project ID.
-    cloudStorageBucket: process.env.CLOUD_BUCKET || 'your-bucket-name',
+    cloudStorageBucket: process.env.CLOUD_BUCKET || 'nodejs-starter-projects',
 
     mysql: {
-      user: process.env.MYSQL_USER || 'your-mysql-user',
-      password: process.env.MYSQL_PASSWORD || 'your-mysql-password',
-      host: process.env.MYSQL_HOST || 'your-mysql-host'
+      user: process.env.MYSQL_USER || 'nodeapp',
+      password: process.env.MYSQL_PASSWORD || 'administrator',
+      host: process.env.MYSQL_HOST || '173.194.87.84'
     },
 
     mongodb: {
@@ -48,8 +48,8 @@ var getConfig = module.exports = function () {
     // The client ID and secret can be obtained by generating a new web
     // application client ID on Google Developers Console.
     oauth2: {
-      clientId: process.env.OAUTH_CLIENT_ID || 'your-client-id',
-      clientSecret: process.env.OAUTH_CLIENT_SECRET || 'your-client-secret',
+      clientId: process.env.OAUTH_CLIENT_ID || '113504418486-memu7i9d8sm7bqoq3pl3ppr2qfrjvjha.apps.googleusercontent.com',
+      clientSecret: process.env.OAUTH_CLIENT_SECRET || 'Mp_ep0bHfnuS2oES6HSHMuFQ',
       redirectUrl: process.env.OAUTH2_CALLBACK ||
         'http://localhost:8080/oauth2callback',
       scopes: ['email', 'profile']
