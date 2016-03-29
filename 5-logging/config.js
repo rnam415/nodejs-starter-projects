@@ -37,7 +37,7 @@ var getConfig = module.exports = function () {
     mysql: {
       user: process.env.MYSQL_USER || 'nodeapp',
       password: process.env.MYSQL_PASSWORD || 'administrator',
-      host: process.env.MYSQL_HOST || '173.194.104.119'
+      host: process.env.MYSQL_HOST || '173.194.87.84'
     },
 
     mongodb: {
