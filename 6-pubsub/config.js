@@ -48,7 +48,7 @@ var getConfig = module.exports = function () {
     // The client ID and secret can be obtained by generating a new web
     // application client ID on Google Developers Console.
     oauth2: {
-      clientId: process.env.OAUTH_CLIENT_ID || '113504418486-memu7i9d8sm7bqoq3pl3ppr2qfrjvjha.apps.googleusercontent.com,
+      clientId: process.env.OAUTH_CLIENT_ID || '113504418486-memu7i9d8sm7bqoq3pl3ppr2qfrjvjha.apps.googleusercontent.com',
       clientSecret: process.env.OAUTH_CLIENT_SECRET || 'Mp_ep0bHfnuS2oES6HSHMuFQ',
       redirectUrl: process.env.OAUTH2_CALLBACK ||
         'http://localhost:8080/oauth2callback',
