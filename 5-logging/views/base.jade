@@ -31,10 +31,12 @@ html(lang="en")
             a(href="/books/mine") My Books
 
         p.navbar-text.navbar-right
-          img(src="https://storage.googleapis.com/nodejs-starter-projects/ClarkLogo.jpg", height=24)
+          img(src="https://storage.googleapis.com/nodejs-starter-projects/ClarkLogo.jpg",
+            height=24,
+            border="5")
           if profile
             if profile.image
-              img.img-circle(src=profile.image.url, width=24)
+              img.img-circle(src=profile.image.url, width=38)
             span #{profile.displayName} &nbsp;
               a(href=logout) (logout)
           else
