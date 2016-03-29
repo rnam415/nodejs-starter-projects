@@ -24,7 +24,7 @@ var getConfig = module.exports = function () {
     // configure the appropriate settings for each storage engine below.
     // If you are unsure, use datastore as it requires no additional
     // configuration.
-    dataBackend: process.env.BACKEND || 'mysql',
+    dataBackend: process.env.BACKEND || 'cloudsql',
 
     // This is the id of your project in the Google Developers Console.
     gcloud: {
