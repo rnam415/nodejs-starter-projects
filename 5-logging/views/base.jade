@@ -31,10 +31,9 @@ html(lang="en")
             a(href="/books") Books
           li
             a(href="/books/mine") My Books
-            
+
         p.navbar-text.navbar-right
-          img(src="https://storage.googleapis.com/nodejs-starter-projects/7770NorfolkLogo.jpg",
-            height=60)
+          img.img-thumbnail(src="https://storage.googleapis.com/nodejs-starter-projects/7770NorfolkLogoThumbnail.jpg")
           if profile
             if profile.image
               img.img-circle(src=profile.image.url, width=38)
